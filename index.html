@@ -23,13 +23,13 @@
       width: 100%;
       background: #fff;
       text-align: center;
-      padding: 0;
+      padding: 1rem 0;     /* ✅ 上下皆有空間 */
       margin: 0;
-      line-height: 0; /* ✅ 避免圖片下方空白 */
+      line-height: 0;      /* ✅ 清除圖片底部空隙 */
     }
 
     .top-logo img {
-      display: block;       /* ✅ 移除底部空白 */
+      display: block;      /* ✅ 避免圖片出現下方符號 */
       width: 100%;
       max-width: 1024px;
       height: auto;
@@ -168,7 +168,7 @@
 </head>
 <body>
 
-  <!-- 頂部贊助圖片（已修正圖片符號） -->
+  <!-- ✅ 頂部贊助圖片（已修正間距與圖片底部空白） -->
   <div class="top-logo">
     <img src="sponsors.png" alt="" draggable="false" />
   </div>
@@ -192,7 +192,7 @@
     <div class="shape">▲</div>
   </div>
 
-  <!-- RSVP 邀請卡 -->
+  <!-- RSVP 卡片 -->
   <div class="invitation-card">
     <div class="main-title">魷Y∞uth遊戲</div>
     <div class="subtitle">21C 開幕典禮</div>
