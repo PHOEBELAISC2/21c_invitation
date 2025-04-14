@@ -23,14 +23,17 @@
       width: 100%;
       background: #fff;
       text-align: center;
-      padding: 0.5rem 0;
-      z-index: 10;
+      padding: 0;
+      margin: 0;
+      line-height: 0; /* ✅ 避免圖片下方空白 */
     }
 
     .top-logo img {
+      display: block;       /* ✅ 移除底部空白 */
       width: 100%;
       max-width: 1024px;
       height: auto;
+      margin: 0 auto;
     }
 
     .invitation-card {
@@ -165,9 +168,9 @@
 </head>
 <body>
 
-  <!-- 頂部贊助圖片 -->
+  <!-- 頂部贊助圖片（已修正圖片符號） -->
   <div class="top-logo">
-    <img src="sponsors.png" alt="Sponsors" />
+    <img src="sponsors.png" alt="" draggable="false" />
   </div>
 
   <!-- 背景裝飾圖形 -->
